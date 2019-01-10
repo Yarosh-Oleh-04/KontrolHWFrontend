@@ -1,10 +1,10 @@
 @import 'fonts.css';
 
-body, p, h2, hr {
+body, p, h1, h2, hr {
     margin: 0;
 }
 
-body > div {
+.content > div {
     padding: 100px 0 80px 0;
     width: 80vw;
     margin: 0 auto;
@@ -18,6 +18,112 @@ h2 {
     font-family: 'Roboto-Black', sans-serif;
     font-size: 48px;
     color: #515151;
+}
+
+.face-slider {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+}
+
+.face-slider .face-background {
+    background-image: url(../Images/Backgrounds/slide-4@3x.png);
+    opacity: 0.52;
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+    z-index: 0;
+}
+
+.face-slider .face-slides {
+    display: flex;
+    position: relative;
+    left: -200vw;
+}
+
+.face-slider .face-slides .face-slide {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.face-slide h1 {
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 48px;
+    color: white;
+}
+
+.face-slide h1 span {
+    font-family: 'Roboto-Bold', sans-serif;
+    color: #1abc9c;
+}
+
+.face-slide p {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 48px;
+    color: white;
+}
+
+.face-slide p span {
+    font-family: 'OpenSans-Bold', sans-serif;
+    color: #1abc9c;
+}
+
+.face-button {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    color: white;
+    padding: 15px 30px;
+    border: solid 2px #1abc9c;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.arrow-left, .arrow-right {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 250px;
+    background-color: #4ec6ab;
+    opacity: 0.65;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow-left {
+    left: 25px;
+}
+
+.arrow-left .left {
+    border: solid white;
+    border-width: 1px 0 0 1px;
+    margin-left: 45px;
+}
+
+.arrow-left .left, .arrow-right .right {
+    padding: 3px;
+    height: 20px;
+    width: 20px;
+    transform: rotate(-45deg);
+}
+
+.arrow-right {
+    right: 25px;
+}
+
+.arrow-right .right {
+    border: solid white;
+    margin-left: 30px;
+    border-width: 0 1px 1px 0;
 }
 
 #helper-slider {
@@ -95,10 +201,11 @@ h2 {
     margin: 3px 0;
 }
 
-.newsletter {
+.content .newsletter {
     padding: 100px 0 130px 0;
     background-size: cover;
     background-image: url('../Images/Backgrounds/bg-2-decor-full@3x.png');
+    background-position: center;
     background-color: #4ec6ab;
     width: 100%;
     display: flex;
@@ -148,7 +255,7 @@ h2 {
     cursor: pointer;
 }
 
-.partner-list {
+.content .partner-list {
     background-color: #e9f0fd;
     width: 100%;
 }
@@ -241,9 +348,10 @@ h2 {
     background-image: url(../Images/Backgrounds/world-map@3x.png);
     background-size: cover;
     z-index: 0;
+    background-position: center;
 }
 
-.connect-block {
+.content .connect-block {
     position: relative;
     background-color: #2d3237;
     background-size: cover;
@@ -403,5 +511,15 @@ h2 {
     }
     #news-email {
         font-size: 18px;
+    }
+    .helper-group .others img {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+    .get-info .vtw span {
+        font-size: 16px;
     }
 }

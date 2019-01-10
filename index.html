@@ -6,146 +6,173 @@
     <link rel="stylesheet" href="./Styles/style.css" />
 </head>
 <body>
-    <div class="face-nav"></div>
-    <div class="addition-block"></div>
-    <div class="new-set"></div>
-    <div class="chit-list"></div>
-    <div class="sale-img"></div>
-    <div class="best-sellers"></div>   
-    <div class="helper-group">
-        <h2>CUSTOMER REVIEW</h2>
-        <div class="rect"><div class="angle"></div></div>
-        <div id="helper-slider">
-            <div id="helper-slides">
-                <div class="helper-slide">
-                    <img class="helper-face" src="./Images/Helper-group/pic-3@3x.png">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                        Aenean commodo ligula eget dolor. Aenean massa. 
-                        Cum sociis natoque penatibus et magnis dis parturient montes, 
-                        nascetur ridiculus mus. Donec quam felis, ultricies nec, 
-                        pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
-                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                        In enim justo, rhoncus ut, </p>
-                    <span>- Adam -</span>
-                    <p>Harvard, USA</p>
+    <div class="face-nav">
+        <div class="my-account"></div>
+        <div class="nav"></div>
+        <div class="face-slider">
+            <div class="face-background"></div>
+            <div class="face-slides">
+                <div class="face-slide">
+                    <h1>DRESSES <span>&</span> JEANS</h1>
+                    <p>FROM OURFAMOUS BRANDS <span>SALE</span></p>
+                    <div class="face-button">BUY NOW</div>
                 </div>
-                <div class="helper-slide">
-                    <img class="helper-face" src="./Images/Helper-group/team-2-1@3x.png">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                        Aenean commodo ligula eget dolor. Aenean massa. 
-                        Cum sociis natoque penatibus et magnis dis parturient montes, 
-                        nascetur ridiculus mus. Donec quam felis, ultricies nec, 
-                        pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
-                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                        In enim justo, rhoncus ut, </p>
-                    <span>- Olivia -</span>
-                    <p>Melbour, Aus</p>
+                <div class="face-slide">
+                    <h1>DRESSES <span>&</span> JEANS</h1>
+                    <p>FROM OURFAMOUS BRANDS <span>SALE</span></p>
+                    <div class="face-button">BUY NOW</div>
                 </div>
-                <div class="helper-slide">
-                    <img class="helper-face" src="./Images/Helper-group/team-2-2@3x.png">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                        Aenean commodo ligula eget dolor. Aenean massa. 
-                        Cum sociis natoque penatibus et magnis dis parturient montes, 
-                        nascetur ridiculus mus. Donec quam felis, ultricies nec, 
-                        pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
-                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                        In enim justo, rhoncus ut, </p>
-                    <span>- Lee -</span>
-                    <p>Tsinghua, Beij</p>
+                <div class="face-slide">
+                    <h1>DRESSES <span>&</span> JEANS</h1>
+                    <p>FROM OURFAMOUS BRANDS <span>SALE</span></p>
+                    <div class="face-button">BUY NOW</div>
                 </div>
             </div>
-        </div>
-        <div class="others">
-            <img class="others-dot" onclick="helper_slider(0)" src="./Images/Helper-group/pic-3@3x.png">
-            <img class="others-dot active" onclick="helper_slider(1)" src="./Images/Helper-group/team-2-1@3x.png">
-            <img class="others-dot" onclick="helper_slider(2)" src="./Images/Helper-group/team-2-2@3x.png">
-        </div>
-    </div> 
-    <div class="newsletter">
-        <h2>NEWSLETTER</h2>
-        <div class="rect"><div class="angle"></div></div>
-        <p>Follow a collection of news & promotions</p>
-        <div class="enter-email">
-            <input id="news-email" type="email" placeholder="Enter your email here">
-            <div id="news-button"><p>▷▷</p></div>
+            <div class="arrow-left" onclick="face_slider(0)"><div class="left"></div></div>
+            <div class="arrow-right" onclick="face_slider(1)"><div class="right"></div></div>
         </div>
     </div>
-    <div class="partner-list">
-        <h2>OUR PARTNER</h2>
-        <div class="rect"><div class="angle"></div></div>
-        <div class="partner-img">
-            <div><img src="./Images/Our-partners/client-01@3x.png"></div>
-            <div><img src="./Images/Our-partners/client-02@3x.png"></div>
-            <div><img src="./Images/Our-partners/client-03@3x.png"></div>
-            <div><img src="./Images/Our-partners/client-06@3x.png"></div>
-        </div>
-    </div>
-    <div class="latest-news">
-        <h2>LATEST NEWS</h2>
-        <div class="rect"><div class="angle"></div></div>
-        <div class="news">
-            <div class="news-item">
-                <img src="./Images/Latest-news/ipad-632394-960-720@3x.png">
-                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean </p>
-                <hr noshade>
-                <p>Nam nec tellus a odio tincidunt auc. 
-                    Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
-                    Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare </p>
-                <div class="news-button">Read More</div>
-            </div>
-            <div class="news-item">
-                <img src="./Images/Latest-news/product-img-5@3x.png">
-                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean </p>
-                <hr noshade>
-                <p>Nam nec tellus a odio tincidunt auc. 
-                    Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
-                    Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare </p>
-                <div class="news-button">Read More</div>
-            </div>
-            <div class="news-item">
-                <img src="./Images/Latest-news/slide-1@3x.png">
-                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean </p>
-                <hr noshade>
-                <p>Nam nec tellus a odio tincidunt auc. 
-                    Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
-                    Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare </p>
-                <div class="news-button">Read More</div>
-            </div>                
-        </div>
-    </div>
-    <div class="connect-block">
-        <div id="connect-background"></div>
-        <h2>GET IN TOUCH</h2>
-        <div class="rect"><div class="angle"></div></div>
-        <div class="touch-content">
-            <div class="get-info">
-                <p class="mart"><span>M</span>art</p>
-                <p class="vtw"><span>We’d love To Meet You In Person Or Via The Web!</span><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Morbi vel nulla sapien. Class aptent tacitiaptent taciti sociosqu ad lit himenaeos. 
-                    Suspendisse massa urna, luctus ut vestibulum necs et, vulputate quis urna. 
-                    Donec at commodo erat.</p>
-                <p class="connect-info"><span>Main Office:</span> 123 Elm St. New York City, NY </p>
-                <p class="connect-info"><span>Phone:</span> 1.555.555.5555</p>
-                <p class="connect-info"><span>Email:</span> info@yourdomain.com</p>
-                <div class="get-pictures">
-                    <a href="https://www.facebook.com" target="blank"><div class="get-pic"><img src="./Images/Get-in-touch/1@3x.png"></div></a>
-                    <a href="https://twitter.com" target="blank"><div class="get-pic"><img src="./Images/Get-in-touch/2@3x.png"></div></a>
-                    <a href="https://www.flashscore.com" target="blank"><div class="get-pic"><img src="./Images/Get-in-touch/3@3x.png"></div></a>
-                    <a href="https://www.instagram.com" target="blank"><div class="get-pic"><img src="./Images/Get-in-touch/4@3x.png"></div></a>
-                    <a href="https://cubevr.com.ua" target="blank"><div class="get-pic"><img src="./Images/Get-in-touch/5@3x.png"></div></a>
-                    <a href="https://www.cat.com" target="blank"><div class="get-pic"><img src="./Images/Get-in-touch/6@3x.png"></div></a>
+    <div class="content">
+        <div class="addition-block"></div>
+        <div class="new-set"></div>
+        <div class="chit-list"></div>
+        <div class="sale-img"></div>
+        <div class="best-sellers"></div>   
+        <div class="helper-group">
+            <h2>CUSTOMER REVIEW</h2>
+            <div class="rect"><div class="angle"></div></div>
+            <div id="helper-slider">
+                <div id="helper-slides">
+                    <div class="helper-slide">
+                        <img class="helper-face" src="./Images/Helper-group/pic-3@3x.png">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa. 
+                            Cum sociis natoque penatibus et magnis dis parturient montes, 
+                            nascetur ridiculus mus. Donec quam felis, ultricies nec, 
+                            pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+                            In enim justo, rhoncus ut, </p>
+                        <span>- Adam -</span>
+                        <p>Harvard, USA</p>
+                    </div>
+                    <div class="helper-slide">
+                        <img class="helper-face" src="./Images/Helper-group/team-2-1@3x.png">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa. 
+                            Cum sociis natoque penatibus et magnis dis parturient montes, 
+                            nascetur ridiculus mus. Donec quam felis, ultricies nec, 
+                            pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+                            In enim justo, rhoncus ut, </p>
+                        <span>- Olivia -</span>
+                        <p>Melbour, Aus</p>
+                    </div>
+                    <div class="helper-slide">
+                        <img class="helper-face" src="./Images/Helper-group/team-2-2@3x.png">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa. 
+                            Cum sociis natoque penatibus et magnis dis parturient montes, 
+                            nascetur ridiculus mus. Donec quam felis, ultricies nec, 
+                            pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+                            In enim justo, rhoncus ut, </p>
+                        <span>- Lee -</span>
+                        <p>Tsinghua, Beij</p>
+                    </div>
                 </div>
             </div>
-            <div class="top-info">
-                <input id="top-name" type="text" placeholder="Your Name">
-                <input id="top-email" type="text" placeholder="Your Email">
-                <input id="top-subject" type="text" placeholder="Subject">
-                <input id="top-url" type="text" placeholder="Website URL">
-                <textarea id="top-message" type="text" placeholder="Your Message..."></textarea>
-                <div id="top-button">SEND</div>
+            <div class="others">
+                <img class="others-dot" onclick="helper_slider(0)" src="./Images/Helper-group/pic-3@3x.png">
+                <img class="others-dot active" onclick="helper_slider(1)" src="./Images/Helper-group/team-2-1@3x.png">
+                <img class="others-dot" onclick="helper_slider(2)" src="./Images/Helper-group/team-2-2@3x.png">
+            </div>
+        </div> 
+        <div class="newsletter">
+            <h2>NEWSLETTER</h2>
+            <div class="rect"><div class="angle"></div></div>
+            <p>Follow a collection of news & promotions</p>
+            <div class="enter-email">
+                <input id="news-email" type="email" placeholder="Enter your email here">
+                <div id="news-button"><p>▷▷</p></div>
             </div>
         </div>
+        <div class="partner-list">
+            <h2>OUR PARTNER</h2>
+            <div class="rect"><div class="angle"></div></div>
+            <div class="partner-img">
+                <div><img src="./Images/Our-partners/client-01@3x.png"></div>
+                <div><img src="./Images/Our-partners/client-02@3x.png"></div>
+                <div><img src="./Images/Our-partners/client-03@3x.png"></div>
+                <div><img src="./Images/Our-partners/client-06@3x.png"></div>
+            </div>
+        </div>
+        <div class="latest-news">
+            <h2>LATEST NEWS</h2>
+            <div class="rect"><div class="angle"></div></div>
+            <div class="news">
+                <div class="news-item">
+                    <img src="./Images/Latest-news/ipad-632394-960-720@3x.png">
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean </p>
+                    <hr noshade>
+                    <p>Nam nec tellus a odio tincidunt auc. 
+                        Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
+                        Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare </p>
+                    <div class="news-button">Read More</div>
+                </div>
+                <div class="news-item">
+                    <img src="./Images/Latest-news/product-img-5@3x.png">
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean </p>
+                    <hr noshade>
+                    <p>Nam nec tellus a odio tincidunt auc. 
+                        Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
+                        Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare </p>
+                    <div class="news-button">Read More</div>
+                </div>
+                <div class="news-item">
+                    <img src="./Images/Latest-news/slide-1@3x.png">
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean </p>
+                    <hr noshade>
+                    <p>Nam nec tellus a odio tincidunt auc. 
+                        Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
+                        Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare </p>
+                    <div class="news-button">Read More</div>
+                </div>                
+            </div>
+        </div>
+        <div class="connect-block">
+            <div id="connect-background"></div>
+            <h2>GET IN TOUCH</h2>
+            <div class="rect"><div class="angle"></div></div>
+            <div class="touch-content">
+                <div class="get-info">
+                    <p class="mart"><span>M</span>art</p>
+                    <p class="vtw"><span>We’d love To Meet You In Person Or Via The Web!</span><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Morbi vel nulla sapien. Class aptent tacitiaptent taciti sociosqu ad lit himenaeos. 
+                        Suspendisse massa urna, luctus ut vestibulum necs et, vulputate quis urna. 
+                        Donec at commodo erat.</p>
+                    <p class="connect-info"><span>Main Office:</span> 123 Elm St. New York City, NY </p>
+                    <p class="connect-info"><span>Phone:</span> 1.555.555.5555</p>
+                    <p class="connect-info"><span>Email:</span> info@yourdomain.com</p>
+                    <div class="get-pictures">
+                        <a href="https://www.facebook.com" target="blank"><div class="get-pic"><img src="./Images/Get-in-touch/1@3x.png"></div></a>
+                        <a href="https://twitter.com" target="blank"><div class="get-pic"><img src="./Images/Get-in-touch/2@3x.png"></div></a>
+                        <a href="https://www.flashscore.com" target="blank"><div class="get-pic"><img src="./Images/Get-in-touch/3@3x.png"></div></a>
+                        <a href="https://www.instagram.com" target="blank"><div class="get-pic"><img src="./Images/Get-in-touch/4@3x.png"></div></a>
+                        <a href="https://cubevr.com.ua" target="blank"><div class="get-pic"><img src="./Images/Get-in-touch/5@3x.png"></div></a>
+                        <a href="https://www.cat.com" target="blank"><div class="get-pic"><img src="./Images/Get-in-touch/6@3x.png"></div></a>
+                    </div>
+                </div>
+                <div class="top-info">
+                    <input id="top-name" type="text" placeholder="Your Name">
+                    <input id="top-email" type="text" placeholder="Your Email">
+                    <input id="top-subject" type="text" placeholder="Subject">
+                    <input id="top-url" type="text" placeholder="Website URL">
+                    <textarea id="top-message" type="text" placeholder="Your Message..."></textarea>
+                    <div id="top-button">SEND</div>
+                </div>
+            </div>
+        </div>  
     </div>
     <script src="./Scripts/script.js"></script>
 </body>
