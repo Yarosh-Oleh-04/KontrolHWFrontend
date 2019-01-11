@@ -48,7 +48,7 @@
     src: url('../Fonts/Roboto/Roboto-Light.woff2') format('woff2'),
         url('../Fonts/Roboto/Roboto-Light.woff') format('woff'),
         url('../Fonts/Roboto/Roboto-Light.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: 100;
     font-style: normal;
 }
 
@@ -56,7 +56,8 @@
     font-family: 'Roboto-Black';
     src: url('../Fonts/Roboto/Roboto-Black.woff2') format('woff2'),
         url('../Fonts/Roboto/Roboto-Black.woff') format('woff'),
-        url('../Fonts/Roboto/Roboto-Black.ttf') format('truetype');    font-weight: 900;
+        url('../Fonts/Roboto/Roboto-Black.ttf') format('truetype');
+        font-weight: 900;
     font-style: normal;
 }
 

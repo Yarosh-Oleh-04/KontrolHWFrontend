@@ -60,3 +60,15 @@ function face_slider(n){
         slider.style.left = left + 'vw'
     }
 }
+
+//Phone menu:
+
+function open_menu() {
+    document.getElementById('phone-menu').style.top = '0';
+}
+
+document.getElementById('phone-menu').onclick = function (event){
+    if (event.target.tagName == 'A' || event.target.id === "close"){
+        document.getElementById('phone-menu').style.top = "-100vh";
+    }
+}

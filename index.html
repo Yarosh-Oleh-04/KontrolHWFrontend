@@ -6,39 +6,67 @@
     <link rel="stylesheet" href="./Styles/style.css" />
 </head>
 <body>
+    <div class="my-account">
+        <div class="my-phone"></div>
+        <div class="my-email"></div>
+    </div>
     <div class="face-nav">
-        <div class="my-account"></div>
-        <div class="nav"></div>
-        <div class="face-slider">
-            <div class="face-background"></div>
-            <div class="face-slides">
-                <div class="face-slide">
-                    <h1>DRESSES <span>&</span> JEANS</h1>
-                    <p>FROM OURFAMOUS BRANDS <span>SALE</span></p>
-                    <div class="face-button">BUY NOW</div>
-                </div>
-                <div class="face-slide">
-                    <h1>DRESSES <span>&</span> JEANS</h1>
-                    <p>FROM OURFAMOUS BRANDS <span>SALE</span></p>
-                    <div class="face-button">BUY NOW</div>
-                </div>
-                <div class="face-slide">
-                    <h1>DRESSES <span>&</span> JEANS</h1>
-                    <p>FROM OURFAMOUS BRANDS <span>SALE</span></p>
-                    <div class="face-button">BUY NOW</div>
-                </div>
+        <div class="logo"><span>M</span>ART</div>
+        <ul class="nav">
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">PAGE</a></li>
+            <li><a href="">SHOP</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT US</a></li>
+        </ul>
+        <div class="cart">
+            <img src="./Images/iconmonstr-magnifier-6.svg">
+            <p>CART - $0</p>
+            <div class="lock">
+                <div class="circle"></div>
+                <div class="money">0</div>
             </div>
-            <div class="arrow-left" onclick="face_slider(0)"><div class="left"></div></div>
-            <div class="arrow-right" onclick="face_slider(1)"><div class="right"></div></div>
         </div>
+        <div id="menu-img" onclick="open_menu()"><img src="./Images/menu.svg"></div>
+    </div>
+    <div id="phone-menu">
+        <img src="./Images/close.svg" id="close">
+        <ul class="nav">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about_us">ABOUT US</a></li>
+            <li><a href="#page">PAGE</a></li>
+            <li><a href="#shop">SHOP</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#contact_us">CONTACT US</a></li>
+        </ul>
+    </div>
+    <div class="face-slider" id="home">
+        <div class="face-background"></div>
+        <div class="face-slides">
+            <div class="face-slide">
+                <h1>DRESSES <span>&</span> JEANS</h1>
+                <p>FROM OURFAMOUS BRANDS <span>SALE</span></p>
+                <div class="face-button">BUY NOW</div>
+            </div>
+            <div class="face-slide">
+                <h1>DRESSES <span>&</span> JEANS</h1>
+                <p>FROM OURFAMOUS BRANDS <span>SALE</span></p>
+                <div class="face-button">BUY NOW</div>
+            </div>
+            <div class="face-slide">
+                <h1>DRESSES <span>&</span> JEANS</h1>
+                <p>FROM OURFAMOUS BRANDS <span>SALE</span></p>
+                <div class="face-button">BUY NOW</div>
+            </div>
+        </div>
+        <div class="arrow-left" onclick="face_slider(0)"><div class="left"></div></div>
+        <div class="arrow-right" onclick="face_slider(1)"><div class="right"></div></div>
     </div>
     <div class="content">
-        <div class="addition-block"></div>
-        <div class="new-set"></div>
-        <div class="chit-list"></div>
-        <div class="sale-img"></div>
-        <div class="best-sellers"></div>   
-        <div class="helper-group">
+        <div class="addition-block" id="about_us"></div>
+        <div class="featured-products" id="shop"></div>
+        <div class="helper-group" id="page">
             <h2>CUSTOMER REVIEW</h2>
             <div class="rect"><div class="angle"></div></div>
             <div id="helper-slider">
@@ -106,7 +134,7 @@
                 <div><img src="./Images/Our-partners/client-06@3x.png"></div>
             </div>
         </div>
-        <div class="latest-news">
+        <div class="latest-news" id="blog">
             <h2>LATEST NEWS</h2>
             <div class="rect"><div class="angle"></div></div>
             <div class="news">
@@ -139,7 +167,7 @@
                 </div>                
             </div>
         </div>
-        <div class="connect-block">
+        <div class="connect-block" id="contact_us">
             <div id="connect-background"></div>
             <h2>GET IN TOUCH</h2>
             <div class="rect"><div class="angle"></div></div>

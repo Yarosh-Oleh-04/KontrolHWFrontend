@@ -1,7 +1,8 @@
 @import 'fonts.css';
 
-body, p, h1, h2, hr {
+body, p, h1, h2, hr, ul {
     margin: 0;
+    padding: 0;
 }
 
 .content > div {
@@ -18,6 +19,157 @@ h2 {
     font-family: 'Roboto-Black', sans-serif;
     font-size: 48px;
     color: #515151;
+}
+
+.face-nav {
+    width: calc(100% - 20vw);
+    padding: 25px 10vw;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+
+.face-nav .logo {
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 30px;
+    color: #555252;
+    display: flex;
+    align-items: center;
+}
+
+.face-nav .logo span {
+    font-family: 'Roboto-Black', sans-serif;
+    color: #1abc9c;
+}
+
+.face-nav .nav {
+    list-style-type: none;
+    display: flex;
+}
+
+.face-nav .nav li {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.face-nav .nav a {
+    text-decoration: none;
+    outline: none;
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-size: 14px;
+    line-height: 11px;
+    color: #0f0101;
+}
+
+.face-nav .nav a:hover {
+    color: #1abc9c;
+}
+
+.face-nav .cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.face-nav .cart img {
+    height: 20px;
+}
+
+.face-nav .cart p {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 18px;
+    line-height: 11px;
+    color: #0f0101;
+    padding: 0 5px;
+}
+
+.face-nav .cart .circle {
+    height: 14px;
+    width: 14px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: solid 1px black;
+    margin: 0 auto;
+    position: absolute;
+    top: 1px;
+    right: 3px;
+    z-index: -1;
+}
+
+.face-nav .cart .money {
+    font-family: 'OpenSans-Semibold', sans-serif;
+    font-size: 14px;
+    color: #1abc9c;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    background-color: white;
+    z-index: 1;
+}
+
+#phone-menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: -100vh;
+    z-index: 3;
+    transition: all .5s ease;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#close {
+    height: 28px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#phone-menu .nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;
+    width: 100%;
+    margin: 20vh 0;
+}
+
+#phone-menu .nav li {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+#phone-menu .nav a {
+    text-decoration: none;
+    outline: none;
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-size: 28px;
+    line-height: 11px;
+    color: #0f0101;
+}
+
+#phone-menu .nav a:hover {
+    color: #1abc9c;
+}
+
+#menu-img img {
+    display: none;
+    height: 49px;
+    cursor: pointer;
 }
 
 .face-slider {
@@ -99,13 +251,9 @@ h2 {
     cursor: pointer;
 }
 
-.arrow-left {
-    left: 25px;
-}
-
 .arrow-left .left {
     border: solid white;
-    border-width: 1px 0 0 1px;
+    border-width: 2px 0 0 2px;
     margin-left: 45px;
 }
 
@@ -117,13 +265,13 @@ h2 {
 }
 
 .arrow-right {
-    right: 25px;
+    right: 0;
 }
 
 .arrow-right .right {
     border: solid white;
     margin-left: 30px;
-    border-width: 0 1px 1px 0;
+    border-width: 0 2px 2px 0;
 }
 
 #helper-slider {
@@ -183,6 +331,11 @@ h2 {
     box-sizing: border-box;
     margin: 28px 10px 0px 10px;
     outline: none !important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .helper-group .others .active {
@@ -512,14 +665,16 @@ h2 {
     #news-email {
         font-size: 18px;
     }
-    .helper-group .others img {
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-    }
+
     .get-info .vtw span {
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    .face-nav .nav, .face-nav .cart {
+        display: none;
+    }
+
+    #menu-img img {
+        display: block;
     }
 }
