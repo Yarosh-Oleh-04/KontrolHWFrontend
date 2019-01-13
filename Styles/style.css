@@ -21,6 +21,48 @@ h2 {
     color: #515151;
 }
 
+.my-account {
+    background-color: #1abc9c;
+    height: 50px;
+    padding: 0 10vw;
+    width: calc(100% - 20vw);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-account img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.my-account .phone-mail > div {
+    font-family: 'OpenSans-Light', sans-serif;
+    font-size: 14px;
+    color: #fefefe;
+    display: flex;
+    align-items: center;
+    float: left;
+    margin-right: 30px;
+}
+
+.my-account ul li a {
+    font-family: 'OpenSans-Light', sans-serif;
+    font-size: 14px;
+    color: #fefefe;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.my-account ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .face-nav {
     width: calc(100% - 20vw);
     padding: 25px 10vw;
