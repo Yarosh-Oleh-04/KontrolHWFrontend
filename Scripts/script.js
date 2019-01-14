@@ -72,3 +72,31 @@ document.getElementById('phone-menu').onclick = function (event){
         document.getElementById('phone-menu').style.top = "-100vh";
     }
 }
+
+//Featured products:
+
+var xml = new XMLHttpRequest
+xml.open('GET', 'http://77.120.115.215:5000/api/get_products')
+xml.send()
+xml.onreadystatechange = function (){
+    if (xml.readyState == 4 && xml.status == 200){
+        let data = JSON.parse(this.responseText)
+        console.log(data)
+        for (i = 0; i < 8; i++){
+            var div = document.createElement('div')
+            div.className = 'product'
+            document.getElementById('products').appendChild(div)
+            div.innerHTML += '<img src=' + data.products[i].image + '>'
+            var l = 0
+            var t = []
+            for (o = 0; o < data.products[i].title.split(' ').length; o++){
+                l += data.products[i].title.split(' ')[o].length
+                if (l > 13){break}
+                t.push(data.products[i].title.split(' ')[o])
+            }
+            console.log(t)
+            div.innerHTML += '<p>' + t.join(' ') + '...' + '</p>'
+            div.innerHTML += '<p>$' + data.products[i].price + '</p>'
+        }
+    }
+}
