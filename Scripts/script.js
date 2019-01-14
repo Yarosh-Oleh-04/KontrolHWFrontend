@@ -95,8 +95,8 @@ xml.onreadystatechange = function (){
                 t.push(data.products[i].title.split(' ')[o])
             }
             console.log(t)
-            div.innerHTML += '<p>' + t.join(' ') + '...' + '</p>'
-            div.innerHTML += '<p>$' + data.products[i].price + '</p>'
+            div.innerHTML += '<p class="pr_name">' + t.join(' ') + '...' + '</p>'
+            div.innerHTML += '<p class="pr_price">$' + data.products[i].price + '</p>'
         }
     }
 }
