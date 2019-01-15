@@ -1,0 +1,113 @@
+@import 'fonts.css';
+
+body, p, h2{
+    margin: 0;
+}
+
+.content > div {
+    margin: 0 auto;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0 100px 0;
+}
+
+.separator {
+    width: 50px;
+    height: 2px;
+    opacity: 0.3;
+    background-color: #413d4b;
+}
+
+h2 {
+    font-family: 'PlayfairDisplay-Bold', sans-serif;
+    font-size: 22px;
+    color: #413d4b;
+}
+
+.content .video {
+    background-image: url(../Next_page_images/Background/put-your-image-here@3x.png);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    height: 60vh;
+    justify-content: center;
+    padding: 0;
+}
+
+.video .background-color {
+    position: absolute;
+    background-image: linear-gradient(to right, #09052f, #311d5e);
+    opacity: 0.85;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.video .video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.video img {
+    height: 100px;
+    cursor: pointer;
+}
+
+.video p {
+    margin-top: 30px;
+    font-family: 'Roboto-Black', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.video iframe {
+    height: 60vh;
+    width: 90vh;
+    display: none;
+    z-index: 1;
+}
+
+.expertise > p {
+    font-family: 'PlayfairDisplay-Regular';
+    font-size: 14px;
+    color: rgba(47, 45, 53, 0.75);
+    padding: 15px 0;
+}
+
+.expertise .ex-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.expertise .ex-blocks .ex {
+    width: calc((100% - 100px) / 3);
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.expertise .ex-blocks .ex img {
+    height: 50px;
+}
+
+.expertise .ex-blocks .ex p:first-of-type {
+    font-family: 'Roboto-Black', sans-serif;
+    font-size: 14px;
+    color: #413d4b;
+    padding: 40px 0 25px 0;
+}
+
+.expertise .ex-blocks .ex p:last-of-type {
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 14px;
+    color: rgba(51, 51, 51, 0.75);
+}
