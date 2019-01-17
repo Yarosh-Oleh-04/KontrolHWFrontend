@@ -26,6 +26,57 @@ h2 {
     color: #413d4b;
 }
 
+.learn-button {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: solid 1px #00e0d0;
+    font-family: 'HammersmithOne-Regular', sans-serif;
+    font-size: 16px;
+    color: #00e0d0;
+}
+
+.content .our-story {
+    padding-bottom: 161px;
+}
+
+.our-story .story {
+    position: relative;
+    width: 100%;
+}
+
+.our-story img {
+    width: 235px;
+    top: -30px;
+    float: left;
+    position: relative;
+}
+
+.our-story .p {
+    position: absolute;
+    width: calc(30vw + 62.875px);
+    right: 0;
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.42px;
+    color: rgba(66, 61, 75, 0.75);
+}
+
+.our-story .p p:first-of-type {
+    padding: 25px 0 20px 0;
+}
+
+.our-story .p .learn-button {
+    margin-top: 30px;
+    position: absolute;
+    left: 2.875px;
+}
+
 .content .video {
     background-image: url(../Next_page_images/Background/put-your-image-here@3x.png);
     background-size: cover;
@@ -66,7 +117,7 @@ h2 {
 }
 
 .video iframe {
-    height: 60vh;
+    height: 7000px;
     width: 90vh;
     display: none;
     z-index: 1;
@@ -89,7 +140,7 @@ h2 {
 
 .expertise .ex-blocks .ex {
     width: calc((100% - 100px) / 3);
-    margin: 50px 0;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,4 +161,11 @@ h2 {
     font-family: 'Roboto-Light', sans-serif;
     font-size: 14px;
     color: rgba(51, 51, 51, 0.75);
+}
+
+@media screen and (min-height: 100vw){
+    .video iframe {
+        width: 100%;
+        height: 90vw;
+    }
 }
