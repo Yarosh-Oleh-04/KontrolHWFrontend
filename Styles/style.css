@@ -220,17 +220,17 @@ h2 {
     display: flex;
     overflow: hidden;
     height: 600px;
-    background-color: black;
+    background-image: url(../Images/Backgrounds/slide-4@3x.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .face-slider .face-background {
-    background-image: url(../Images/Backgrounds/slide-4@3x.png);
+    background-color: black;
     opacity: 0.52;
     height: 600px;
     width: 100%;
-    background-size: cover;
     position: absolute;
-    background-position: center;
     z-index: 0;
 }
 
@@ -370,8 +370,10 @@ h2 {
     justify-content: space-between;
 }
 
-.best-sellers .sellers div {
+.best-sellers .sellers > div {
     width: calc((100% - 90px) / 4);
+    display: flex;
+    flex-direction: column;
 }
 
 .best-sellers .sellers img {
@@ -420,8 +422,8 @@ h2 {
 
 .pr_name {
     width: calc(70% - 10px);
-    float: left;
     background-color: #323232;
+    float: left;
 }
 
 .pr_name, .pr_price {

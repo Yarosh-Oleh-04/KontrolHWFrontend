@@ -1,16 +1,16 @@
 @import 'fonts.css';
 
-body, p, h2{
+body, p, h3, h2, h1 {
     margin: 0;
 }
 
-.content > div {
+body > .content > div {
     margin: 0 auto;
     width: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 70px 0 100px 0;
+    padding: 70px 0 70px 0;
 }
 
 .separator {
@@ -38,6 +38,68 @@ h2 {
     font-family: 'HammersmithOne-Regular', sans-serif;
     font-size: 16px;
     color: #00e0d0;
+    cursor: pointer;
+}
+
+.content .face-page {
+    align-items: normal;
+    padding: 15px 0 0 0;
+    background-image: url(../Next_page_images/Background/forest.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    height: 60vh;
+}
+
+.face-page .background-color {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #09052f, #311d5e);
+    opacity: 0.85;
+    position: absolute;
+    z-index: 0;
+}
+
+.face-page .face-content {
+    width: 60vw;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+.face-page .logo img {
+    height: 50px;
+}
+
+.face-page .separator {
+    background-color: #00e0d0;
+    opacity: 1;
+    margin: 20px 0 30px 0;
+}
+
+.face-page .face-content .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(60vh - 50px);
+}
+
+.face-content .slide h1 {
+    font-family: 'PlayfairDisplay-Black', sans-serif;
+    font-size: 32px;
+    letter-spacing: 0.32px;
+    color: white;
+}
+
+.face-content .slide p {
+    text-align: center;
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: white;
+    margin-bottom: 50px;
 }
 
 .content .our-story {
@@ -123,6 +185,10 @@ h2 {
     z-index: 1;
 }
 
+.content .expertise {
+    padding: 70px 0 100px 0;
+}
+
 .expertise > p {
     font-family: 'PlayfairDisplay-Regular';
     font-size: 14px;
@@ -161,6 +227,107 @@ h2 {
     font-family: 'Roboto-Light', sans-serif;
     font-size: 14px;
     color: rgba(51, 51, 51, 0.75);
+}
+
+.connect-block {
+    flex-direction: row;
+}
+
+.connect-block .giv-us {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .all-rights {
+    width: 100%;
+    background-image: url(../Next_page_images/Background/@3x.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.all-rights .background-color {
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(to right, #09052f, #311d5e);
+    opacity: 0.85;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.all-rights .content {
+    z-index: 0;
+    width: 60vw;
+}
+
+.all-rights .rights {
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-rights .rights .logo {
+    height: 50px;
+}
+
+.all-rights .rights > div {
+    width: calc((100% - 100px) / 3);
+}
+
+.all-rights .rights p {
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.35px;
+    color: white;
+}
+
+.all-rights .rights h3 {
+    font-family: 'Roboto-Black', sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.75px;
+    color: white;
+    margin: 12px 0;
+}
+
+#subscribe {
+    float: left;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    outline: none;
+    padding-left: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    width: 70%;
+    height: 45px;
+    box-sizing: border-box;
+}
+
+#subscribe::placeholder, #subscribe {
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.sub-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bt {
+    float: left;
+    width: 25%;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+.bt img {
+    height: 25px;
+    position: relative;
+    left: calc(50% - 12.5px);
+    cursor: pointer;
 }
 
 @media screen and (min-height: 100vw){
