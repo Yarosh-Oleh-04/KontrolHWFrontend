@@ -1,7 +1,8 @@
 @import 'fonts.css';
 
-body, p, h3, h2, h1 {
+body, p, h3, h2, h1, ul {
     margin: 0;
+    padding: 0;
 }
 
 body > .content > div {
@@ -205,12 +206,24 @@ h2 {
 }
 
 .expertise .ex-blocks .ex {
-    width: calc((100% - 100px) / 3);
-    margin-top: 50px;
+    width: calc(100% / 3);
+    padding: 30px;
+    border-right: solid 1px rgba(0, 0, 0, 0.1);
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+.expertise .ex-blocks .ex:nth-of-type(3), .expertise .ex-blocks .ex:nth-of-type(6){
+    border-right: none;
+}
+
+.expertise .ex-blocks .ex:nth-of-type(4), .expertise .ex-blocks .ex:nth-of-type(5), .expertise .ex-blocks .ex:nth-of-type(6) {
+    border-bottom: none;
+}
+
 
 .expertise .ex-blocks .ex img {
     height: 50px;
@@ -229,14 +242,56 @@ h2 {
     color: rgba(51, 51, 51, 0.75);
 }
 
-.connect-block {
+.content .connect-block {
     flex-direction: row;
+    align-items: baseline;
 }
 
 .connect-block .giv-us {
     width: 50%;
     display: flex;
     flex-direction: column;
+}
+
+.connect-block input, .connect-block textarea, .connect-block input::placeholder, .connect-block textarea::placeholder {
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: rgba(65, 61, 75, 0.5);
+}
+
+.connect-block input, .connect-block textarea {
+    outline: none;
+    padding-left: 20px;
+    height: 45px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    color: rgba(65, 61, 75);
+}
+
+.connect-block textarea {
+    padding: 13px 0 0 20px;
+    height: 200px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.connect-block .client {
+    margin-left: 100px;
+    width: 50%;
+}
+
+.connect-block .client > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.connect-block .client > div img {
+    width: calc(50% - 20px);
+    margin: 10px 0;
 }
 
 .content .all-rights {
@@ -289,7 +344,7 @@ h2 {
     line-height: 26px;
     letter-spacing: 0.75px;
     color: white;
-    margin: 12px 0;
+    margin: 15px 0;
 }
 
 #subscribe {
@@ -298,7 +353,7 @@ h2 {
     outline: none;
     padding-left: 15px;
     background-color: rgba(255, 255, 255, 0);
-    width: 70%;
+    width: calc(80% - 25px);
     height: 45px;
     box-sizing: border-box;
 }
@@ -317,7 +372,7 @@ h2 {
 
 .bt {
     float: left;
-    width: 25%;
+    width: 20%;
     height: 25px;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 10px;
@@ -330,9 +385,75 @@ h2 {
     cursor: pointer;
 }
 
+.rights .p_map img {
+    height: 19px;
+    float: left;
+    margin-right: 15px;
+}
+
+.rights .p_map {
+    display: flex;
+}
+
+.get-pic {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: solid 1px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-pic img {
+    height: 15px;
+}
+
+.icons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.35px;
+    color: white;
+}
+
+.copyright ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.copyright ul li {
+    cursor: pointer;
+}
+
 @media screen and (min-height: 100vw){
     .video iframe {
         width: 100%;
         height: 90vw;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+    .get-pic {
+        width: 20px;
+        height: 20px;
+    }
+
+    .connect-block textarea {
+        height: 100px;
     }
 }
