@@ -832,6 +832,10 @@ h2 {
 }
 
 @media screen and (min-height: 100vw){
+    .pr_name, .pr_price {
+        font-size: 14px;
+    }
+
     .latest-news .news {
         flex-direction: column;
         align-items: center;
